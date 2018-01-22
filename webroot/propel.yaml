@@ -1,0 +1,18 @@
+propel:
+  database:
+      connections:
+          drupal:
+              adapter: mysql
+              classname: Propel\Runtime\Connection\ConnectionWrapper
+              dsn: "mysql:host=mariadb;dbname=drupal"
+              user: drupal
+              password: drupal
+              attributes:
+  runtime:
+      defaultConnection: drupal
+      connections:
+          - drupal
+  generator:
+      defaultConnection: drupal
+      connections:
+          - drupal
